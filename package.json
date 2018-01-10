@@ -1,0 +1,41 @@
+{
+  "engines": {
+    "node": ">=9.3"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "eslint src",
+    "build": "babel index.js -d dist",
+    "prepare": "npm run build",
+    "test": "ava"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bbc-microbit": "^0.2.0",
+    "noble": "git://github.com/jacobrosenthal/noble.git#highsierra"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.14.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.9.2"
+  }
+}

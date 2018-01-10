@@ -1,0 +1,22 @@
+{
+  "plugins": [],
+  "env": {
+    "development": {
+      "presets": [["env", { "targets": { "chrome": 63 } }]]
+    },
+    "test": {
+      "presets": [["env", { "targets": { "node": "8.9" } }]]
+    },
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false,
+            "browsers": ["last 2 versions", "ie >= 11"]
+          }
+        ]
+      ]
+    }
+  }
+}
