@@ -1,4 +1,4 @@
-# micro:bit BLE :MOVE mini buggy kit controlling sample
+# micro:bit with :MOVE mini buggy kit controlling sample via BLE
 
 Controls [:MOVE mini buggy kit](https://www.kitronik.co.uk/5624-move-mini-buggy-kit-excl-microbit.html) which uses [micro:bit](http://microbit.org/).
 
