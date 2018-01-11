@@ -6,13 +6,7 @@
   "scripts": {
     "lint": "eslint src",
     "build": "babel index.js -d dist",
-    "prepare": "npm run build",
-    "test": "ava"
-  },
-  "ava": {
-    "require": [
-      "babel-register"
-    ]
+    "prepare": "npm run build"
   },
   "license": "MIT",
   "dependencies": {
